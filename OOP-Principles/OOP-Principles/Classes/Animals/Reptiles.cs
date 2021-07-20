@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Principles.Classes.Animals
+namespace OOP_Principles.Classes.Animals.Reptiles
 {
-    public abstract class Reptiles
+    public abstract class Reptiles : Animals
     {
         public abstract bool ExtendableTongue { get; set; }
         public virtual int TailCondition {get; set; }

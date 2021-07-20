@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Principles.Classes
+namespace OOP_Principles.Classes.Animals
 {
     public abstract class Animals
     {

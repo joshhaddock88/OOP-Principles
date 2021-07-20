@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Principles
+namespace OOP_Principles.Classes.Animals.Mammals
 {
-    public abstract class Mammals
+    public abstract class Mammals : Animals
     {
         public virtual bool Nocturnal { get; set; }
         public virtual string Groups { get; set; }
