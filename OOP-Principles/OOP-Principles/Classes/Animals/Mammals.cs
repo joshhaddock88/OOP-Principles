@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace OOP_Principles
 {
-    class Mammals
+    public abstract class Mammals
     {
+        public virtual bool Nocturnal { get; set; }
+        public virtual string Groups { get; set; }
 
+        public virtual void IsNursing()
+        {
+            Console.WriteLine("All mammals nurse! It's what makes them mammals!");
+        }
+        public virtual void Swimming()
+        {
+            Console.WriteLine("This animal loves to swim!");
+        }
     }
 }
