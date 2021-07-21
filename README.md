@@ -26,12 +26,13 @@
 
 ## Features
 
-* Can create instances species objects, which all inherit props and methods from at least three levels up from the parent class Animal.
+* Can create instances of species objects, which all inherit props and methods from at least three levels up from the parent class Animal. Class can also be assigned interfaces.
 
 ## Images : UML
 
 ![Problem Domain UML](./OOP-Principles/images/ProblemDomain.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
+
+![Problem Domain with sample Interface](./OOP-Principles/images/OOP-UML-WithInterfaces.png)
 
 ## Setup
 
@@ -43,12 +44,12 @@ To use it simply clone the repo and edit the code inside of Visual Studio 2019.
 
 ## Project Status
 
-Project is: *in progress*
+Project is: Complete
 
 ## Room for Improvement
 
 To do:
-[ ] Refactor to include interfaces.
+[x] Refactor to include interfaces.
 
 
 ## Acknowledgements
