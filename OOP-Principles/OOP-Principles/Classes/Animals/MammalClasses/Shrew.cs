@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_Principles.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace OOP_Principles.Classes.Animals.Mammals.Shrew
 {
-    public class Shrew : Mammals
+    public class Shrew : Mammals, IChiropteraInsectivora
     {
-        public bool Venomous { get; set; } = true;
-        public override bool WarmBlooded { get; set; } = true;
+        public override bool HasFur { get; set; } = true;
         public override int LegNumber { get; set; } = 4;
         public override bool Carnivore { get; set; } = true;
         public override string Species { get; set; } = "Shrew";
@@ -25,9 +25,18 @@ namespace OOP_Principles.Classes.Animals.Mammals.Shrew
             }
         }
 
+        public void EchoLocation()
+        {
+            Console.WriteLine("Some shrews use echolocation to see inside their tunnels!");
+        }
+
+        public string InsectivoraOrChiroptera { get; set; } = "Insectivora";
+
         public override void Sleep()
         {
             Console.WriteLine("Shrews only live for about 14 months and rarely sleep.");
         }
+
+        public bool Venomous { get; set; } = true;
     }
 }

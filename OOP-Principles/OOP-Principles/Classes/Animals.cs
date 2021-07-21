@@ -8,7 +8,6 @@ namespace OOP_Principles.Classes.Animals
 {
     public abstract class Animals
     {
-        public abstract bool WarmBlooded { get; set; }
         public abstract int LegNumber { get; set; }
         public abstract bool Carnivore { get; set; }
         public abstract string Species { get; set; }

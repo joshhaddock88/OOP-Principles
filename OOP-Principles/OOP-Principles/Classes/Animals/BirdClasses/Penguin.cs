@@ -1,4 +1,5 @@
 ﻿using System;
+using OOP_Principles.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace OOP_Principles.Classes.Animals.Birds.Penguin
 {
-    public class Penguin : Birds
+    public class Penguin : Birds, ISwim
     {
         public override bool Perching { get; set; } = false;
         public override int Speed { get; set; } = 5;
-        public override bool WarmBlooded { get; set; } = true;
         public override int LegNumber { get; set; } = 2;
         public override bool Carnivore { get; set; } = true;
         public override string Species { get; set; } = "Penguin";
         public override bool LaysEggs { get; set; } = true;
+        public bool LivesUnderWater { get; set; } = false;
+        public string OxygenIntake { get; set; } = "Lungs";
 
         public override void Migratory()
         {
@@ -29,6 +31,13 @@ namespace OOP_Principles.Classes.Animals.Birds.Penguin
         public override void Sleep()
         {
             Console.WriteLine("Penguins sleep for only a few minutes at a time! They get their rest by taking dozens of tiny naps throughout the day!");
+        }
+
+        public void SwimmingMechanics()
+        {
+            Console.WriteLine("Penguins have webbed feet and aerodynamic bodies that makes " +
+                "for excellent swimmers. Their slick fur and cylindrical bodies glide through " +
+                "the ocean with ease.");
         }
     }
 }

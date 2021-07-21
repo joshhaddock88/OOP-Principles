@@ -11,7 +11,6 @@ namespace OOP_Principles.Classes.Animals.Birds.Hawk
         public int DiveSpeed { get; set; } = 120;
         public override bool Perching { get; set; } = true;
         public override int Speed { get; set; } = 15;
-        public override bool WarmBlooded { get; set; } = true;
         public override int LegNumber { get; set; } = 2;
         public override bool Carnivore { get; set; } = true;
         public override string Species { get; set; } = "Hawk";
