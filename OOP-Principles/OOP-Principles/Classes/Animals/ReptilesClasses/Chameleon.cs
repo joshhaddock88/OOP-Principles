@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP_Principles.Classes.Animals.Reptiles.Chameleon
 {
-    class Chameleon : Reptiles
+    public class Chameleon : Reptiles
     {
         public string Color { get; set; } = "Green";
         public override bool ExtendableTongue { get; set; } = true;
-        public override bool WarmBlooded { get; set; } = false;
         public override int LegNumber { get; set; } = 4;
         public override bool Carnivore { get; set; } = true;
         public override string Species { get; set; } = "Chameleon";

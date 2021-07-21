@@ -1,4 +1,5 @@
 ﻿using System;
+using OOP_Principles.Interfaces;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace OOP_Principles.Classes.Animals.Mammals.FlyingFox
 {
-    public class FlyingFox : Mammals
+    public class FlyingFox : Mammals, IChiropteraInsectivora
     {
         public bool IsCute { get; set; } = true;
         public int WingSpan { get; set; } = 6;
-        public override bool WarmBlooded { get; set; } = true;
         public override int LegNumber { get; set; } = 2;
         public override bool Carnivore { get; set; } = false;
         public override string Species { get; set; } = "Flying Fox";
         public override bool LaysEggs { get; set; } = false;
         public override bool Nocturnal { get; set; } = true;
+        public bool Venomous { get; set; } = false;
 
         public void Fly()
         {
@@ -42,5 +43,13 @@ namespace OOP_Principles.Classes.Animals.Mammals.FlyingFox
         {
             base.IsNursing();
         }
+
+        public void EchoLocation()
+        {
+            Console.WriteLine("While many bats have echo location, flying foxes do not. " +
+                "They just have large eyes which are sensitive to light.");
+        }
+
+        public string InsectivoraOrChiroptera { get; set; } = "Chiroptera";
     }
 }

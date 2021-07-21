@@ -19,7 +19,7 @@ namespace OOP_Principles
             Console.WriteLine($"{MyHippo.Species}");
             Chameleon MyChameleon = new Chameleon();
             MyChameleon.ChangeColor("purple");
-            
+            MyHippo.FamilyUnit();
         }
     }
 }

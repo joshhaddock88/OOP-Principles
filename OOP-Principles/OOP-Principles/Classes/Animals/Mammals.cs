@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OOP_Principles.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace OOP_Principles.Classes.Animals.Mammals
     {
         public virtual bool Nocturnal { get; set; }
         public virtual string Groups { get; set; }
+
+        public virtual bool HasFur { get; set; } = true;
 
         public virtual void IsNursing()
         {
